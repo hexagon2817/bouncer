@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BOUNCER</title>
+    <link
+      rel="icon"
+      href="./assets/img/bodyguard-icon.png"
+      type="image/bodyguard-icon"
+    />
+
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./fontawesome/css/all.min.css" />
+
+    <link rel="stylesheet" href="./css-folder/about.css" />
+  </head>
+  <body>
+    <!-- Enhanced Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html">BOUNCER</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="nav-icon nav-hamburger">
+            <i class="fas fa-bars"></i>
+          </span>
+          <span class="nav-icon nav-close">
+            <i class="fas fa-times"></i>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#EliteTeam">Elite Team</a>
+            </li>
+          </ul>
+
+          <!-- Contact Us Button (separate from regular links) -->
+          <div class="ms-lg-4 mt-3 mt-lg-0">
+            <a href="./contact.html" class="btn contact-nav-btn">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ==================== MAIN CONTENT ==================== -->
+    <main>
+      <!-- Floating Particles (same as home page) -->
+      <div id="particles"></div>
+
+      <!-- Hero Section - About -->
+      <section class="hero text-center" style="min-height: 80vh">
+        <div class="container position-relative" style="z-index: 2">
+          <h1 class="fade-in">WHO WE ARE</h1>
+          <p class="lead mt-4 mb-5 fs-2 fade-in" style="animation-delay: 0.5s">
+            Elite Protection Built on Experience, Precision & Unwavering
+            Commitment
+          </p>
+          <a
+            href="./contact.html"
+            class="btn btn-primary-glow fade-in"
+            style="animation-delay: 1s"
+            >GET IN TOUCH</a
+          >
+        </div>
+      </section>
+
+      <!-- Our Story -->
+      <!-- <section class="section-dark py-5">
+        <div class="container">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-6 fade-in">
+              <h2 class="display-4 fw-bold mb-4">Our Story</h2>
+              <p class="lead opacity-75" style="text-align: justify">
+                Founded in 2010 by former special forces operatives and law
+                enforcement veterans, BOUNCER was born from a simple but
+                powerful belief: true security requires more than just presence
+                — it demands expertise, anticipation, and absolute discretion.
+              </p>
+              <p class="opacity-75 fs-5" style="text-align: justify">
+                Over the past decade, we have protected CEOs, celebrities,
+                dignitaries, and families across 45+ countries. Every mission
+                has strengthened our resolve to deliver protection that is
+                proactive, seamless, and uncompromising.
+              </p>
+              <div class="row mt-5 text-center">
+                <div class="col-4">
+                  <h3 class="counter text-primary" data-target="15">0</h3>
+                  <p>Years of Excellence</p>
+                </div>
+                <div class="col-4">
+                  <h3 class="counter text-primary" data-target="1500">0</h3>
+                  <p>Missions Completed</p>
+                </div>
+                <div class="col-4">
+                  <h3 class="counter text-primary" data-target="100">0</h3>
+                  <p>% Client Retention</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 fade-in">
+              <div class="glow-border">
+                <img
+                  src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?q=80&w=1374&auto=format&fit=crop"
+                  alt="Our Team in Action"
+                  class="img-fluid rounded shadow-lg"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <section class="section-dark reset-spacing">
+        <div class="container-fluid">
+          <div class="row align-items-center g-0">
+            <div class="col-lg-6 fade-in p-3 p-md-4">
+              <h2 class="display-4 fw-bold">Our Story</h2>
+
+              <p class="lead opacity-75 text-justify">
+                Founded in 2010 by former special forces operatives and law
+                enforcement veterans, BOUNCER was born from a simple but
+                powerful belief.
+              </p>
+
+              <p class="opacity-75 fs-5 text-justify">
+                Over the past decade, we have protected CEOs, celebrities,
+                dignitaries, and families across 45+ countries.
+              </p>
+
+              <div class="row text-center g-0">
+                <div class="col-4">
+                  <h3 class="counter text-primary">15</h3>
+                  <p>Years of Excellence</p>
+                </div>
+                <div class="col-4">
+                  <h3 class="counter text-primary">500+</h3>
+                  <p>Missions Completed</p>
+                </div>
+                <div class="col-4">
+                  <h3 class="counter text-primary">100%</h3>
+                  <p>Client Retention</p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-6 fade-in p-3 p-md-4"
+              style="height: 400px; width: 400px; margin: auto"
+            >
+              <img
+                src="./assets/img/story.jfif"
+                alt="Our Team"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Mission & Values -->
+      <section
+        class="section-dark py-5"
+        style="background: linear-gradient(to bottom, var(--dark), #000)"
+      >
+        <div class="container">
+          <h2 class="text-center display-4 fw-bold mb-5 fade-in">
+            Our Core Values
+          </h2>
+          <!-- Old-Code -->
+          <!-- <div class="row g-5">
+            <div class="col-md-4 fade-in">
+              <div class="service-card text-center h-100">
+                <i class="fas fa-shield-alt service-icon"></i>
+                <h4>Integrity</h4>
+                <p>
+                  We operate with complete transparency and ethical standards in
+                  every operation.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4 fade-in">
+              <div class="service-card text-center h-100">
+                <i class="fas fa-eye service-icon"></i>
+                <h4>Vigilance</h4>
+                <p>
+                  Constant threat assessment and proactive measures ensure
+                  nothing is left to chance.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4 fade-in">
+              <div class="service-card text-center h-100">
+                <i class="fas fa-handshake service-icon"></i>
+                <h4>Discretion</h4>
+                <p>
+                  Your privacy is sacred. We protect your confidentiality as
+                  fiercely as your safety.
+                </p>
+              </div>
+            </div>
+          </div> -->
+
+          <!-- New-Code -->
+          <div class="row g-0">
+            <div class="col-md-4 fade-in p-3 p-md-4">
+              <div class="service-card text-center">
+                <i class="fas fa-shield-alt service-icon"></i>
+                <h4>Integrity</h4>
+                <p>
+                  We operate with complete transparency and ethical standards in
+                  every operation.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4 fade-in p-3 p-md-4">
+              <div class="service-card text-center">
+                <i class="fas fa-eye service-icon"></i>
+                <h4>Vigilance</h4>
+                <p>
+                  Constant threat assessment and proactive measures ensure
+                  nothing is left to chance.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4 fade-in p-3 p-md-4">
+              <div class="service-card text-center">
+                <i class="fas fa-handshake service-icon"></i>
+                <h4>Discretion</h4>
+                <p>
+                  Your privacy is sacred. We protect your confidentiality as
+                  fiercely as your safety.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Enhanced Our Journey Timeline Section -->
+      <!-- Final Professional Our Journey Timeline Section -->
+      <section class="section-dark py-5">
+        <div class="container">
+          <div class="text-center mb-5 fade-in">
+            <h2 class="display-4 fw-bold">Our Journey</h2>
+            <p
+              class="lead opacity-75 mt-4"
+              style="max-width: 800px; margin: 0 auto"
+            >
+              From battlefield roots to global elite protection — key milestones
+              that define BOUNCER.
+            </p>
+          </div>
+
+          <div class="enhanced-timeline fade-in">
+            <!-- Milestone 1 -->
+            <div class="timeline-item left">
+              <div class="timeline-node">
+                <span class="timeline-year text-primary">2010</span>
+              </div>
+              <div class="timeline-content">
+                <h4>Founded by Special Forces Veterans</h4>
+                <p>
+                  BORN from battlefield experience, delivering unmatched
+                  tactical expertise to civilian protection.
+                </p>
+              </div>
+            </div>
+
+            <!-- Milestone 2 -->
+            <div class="timeline-item right">
+              <div class="timeline-node">
+                <span class="timeline-year text-primary">2013</span>
+              </div>
+              <div class="timeline-content">
+                <h4>First International Deployment</h4>
+                <p>
+                  Expanded operations to Europe and Middle East, protecting
+                  high-profile clients in high-risk zones.
+                </p>
+              </div>
+            </div>
+
+            <!-- Milestone 3 -->
+            <div class="timeline-item left">
+              <div class="timeline-node">
+                <span class="timeline-year text-primary">2016</span>
+              </div>
+              <div class="timeline-content">
+                <h4>500+ Missions Milestone</h4>
+                <p>
+                  Achieved perfect success rate while growing our elite agent
+                  network worldwide.
+                </p>
+              </div>
+            </div>
+
+            <!-- Milestone 4 -->
+            <div class="timeline-item right">
+              <div class="timeline-node">
+                <span class="timeline-year text-primary">2019</span>
+              </div>
+              <div class="timeline-content">
+                <h4>Advanced Tech Integration</h4>
+                <p>
+                  Introduced real-time surveillance systems and predictive
+                  threat analytics.
+                </p>
+              </div>
+            </div>
+
+            <!-- Milestone 5 -->
+            <div class="timeline-item left">
+              <div class="timeline-node">
+                <span class="timeline-year text-primary">2022</span>
+              </div>
+              <div class="timeline-content">
+                <h4>Global Command Center Launch</h4>
+                <p>
+                  24/7 operations hub established for instant response across
+                  45+ countries.
+                </p>
+              </div>
+            </div>
+
+            <!-- Milestone 6 -->
+            <div class="timeline-item right">
+              <div class="timeline-node">
+                <span class="timeline-year text-primary">2025</span>
+              </div>
+              <div class="timeline-content">
+                <h4>1500+ Successful Missions</h4>
+                <p>
+                  Continuing to set the gold standard in executive and VIP
+                  protection worldwide.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- old-code -->
+      <!-- Protected by the Best - Client Industries Section -->
+      <!-- <section class="section-dark py-5">
+        <div class="container">
+          <div class="text-center mb-5 fade-in">
+            <h2 class="display-4 fw-bold">Protected by the Best</h2>
+            <p
+              class="lead opacity-75 mt-4"
+              style="max-width: 800px; margin: 0 auto"
+            >
+              Trusted by leaders across high-stakes industries worldwide.
+            </p>
+          </div>
+
+          <div class="row g-5 justify-content-center fade-in">
+            <div class="col-lg-2 col-md-4 col-6">
+              <div class="industry-card text-center">
+                <i class="fas fa-user-tie industry-icon"></i>
+                <h5 class="mt-3">CEOs & Executives</h5>
+              </div>
+            </div>
+
+            <div class="col-lg-2 col-md-4 col-6">
+              <div class="industry-card text-center">
+                <i class="fas fa-microphone-alt industry-icon"></i>
+                <h5 class="mt-3">Celebrities & Artists</h5>
+              </div>
+            </div>
+
+            <div class="col-lg-2 col-md-4 col-6">
+              <div class="industry-card text-center">
+                <i class="fas fa-landmark industry-icon"></i>
+                <h5 class="mt-3">Diplomats & Officials</h5>
+              </div>
+            </div>
+
+            <div class="col-lg-2 col-md-4 col-6">
+              <div class="industry-card text-center">
+                <i class="fas fa-briefcase industry-icon"></i>
+                <h5 class="mt-3">Corporate Leaders</h5>
+              </div>
+            </div>
+
+            <div class="col-lg-2 col-md-4 col-6">
+              <div class="industry-card text-center">
+                <i class="fas fa-building industry-icon"></i>
+                <h5 class="mt-3">Luxury Events & Venues</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- new-code -->
+      <section class="section-dark reset-spacing">
+        <div class="container-fluid">
+          <div class="text-center fade-in">
+            <h2 class="display-4 fw-bold">Protected by the Best</h2>
+            <p class="lead opacity-75" style="max-width: 800px; margin: 0 auto">
+              Trusted by leaders across high-stakes industries worldwide.
+            </p>
+          </div>
+
+          <div class="row justify-content-center fade-in g-0">
+            <div class="col-lg-2 col-md-4 col-6 p-3 p-md-4">
+              <div class="industry-card text-center">
+                <i class="fas fa-user-tie industry-icon"></i>
+                <h5>CEOs & Executives</h5>
+              </div>
+            </div>
+
+            <div class="col-lg-2 col-md-4 col-6 p-3 p-md-4">
+              <div class="industry-card text-center">
+                <i class="fas fa-microphone-alt industry-icon"></i>
+                <h5>Celebrities & Artists</h5>
+              </div>
+            </div>
+
+            <div class="col-lg-2 col-md-4 col-6 p-3 p-md-4">
+              <div class="industry-card text-center">
+                <i class="fas fa-landmark industry-icon"></i>
+                <h5>Diplomats & Officials</h5>
+              </div>
+            </div>
+
+            <div class="col-lg-2 col-md-4 col-6 p-3 p-md-4">
+              <div class="industry-card text-center">
+                <i class="fas fa-briefcase industry-icon"></i>
+                <h5>Corporate Leaders</h5>
+              </div>
+            </div>
+
+            <div class="col-lg-2 col-md-4 col-6 p-3 p-md-4">
+              <div class="industry-card text-center">
+                <i class="fas fa-building industry-icon"></i>
+                <h5>Luxury Events & Venues</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="py-5 text-center" style="background: var(--primary)">
+        <div class="container fade-in">
+          <h2 class="display-4 fw-bold">
+            Ready to Experience Elite Protection?
+          </h2>
+          <p class="lead my-4 fs-3">
+            Contact us today for a confidential consultation
+          </p>
+          <a href="./contact.html" class="btn btn-dark btn-lg px-5 py-4">
+            REQUEST A QUOTE
+          </a>
+        </div>
+      </section>
+    </main>
+    <!-- Floating WhatsApp Button -->
+    <a
+      href="https://wa.me/919999999999?text=Hello%20I%20would%20like%20to%20book%20an%20Ayurveda%20consultation"
+      class="whatsapp-float"
+      target="_blank"
+      aria-label="Chat on WhatsApp"
+    >
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Footer -->
+
+    <footer
+      class="py-5"
+      style="
+        background: linear-gradient(135deg, #000, #1a0000);
+        border-top: 3px solid var(--primary);
+        position: relative;
+        overflow: hidden;
+      "
+    >
+      <!-- Subtle glow overlay -->
+      <div
+        style="
+          position: absolute;
+          inset: 0;
+          background: radial-gradient(
+            circle at top center,
+            rgba(231, 76, 60, 0.15),
+            transparent 70%
+          );
+          pointer-events: none;
+        "
+      ></div>
+
+      <div class="container position-relative" style="z-index: 2">
+        <div class="row gy-5">
+          <!-- Brand & Description -->
+          <div class="col-6 col-lg-3 fade-in">
+            <a
+              class="navbar-brand"
+              href="./index.html"
+              style="line-height: initial"
+              >BOUNCER</a
+            >
+            <p class="lead opacity-75">
+              Elite Security & Executive Protection Agency
+            </p>
+            <p class="opacity-75">
+              Providing world-class protection with unmatched expertise,
+              discretion, and 24/7 readiness.
+            </p>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-6 col-lg-3 fade-in">
+            <h5 class="text-white fw-bold mb-4" style="line-height: inherit">
+              Quick Links
+            </h5>
+            <ul class="list-unstyled">
+              <li class="mb-3">
+                <a href="./index.html" class="footer-link">Home</a>
+              </li>
+              <li class="mb-3">
+                <a href="./about.html" class="footer-link">About Us</a>
+              </li>
+              <li class="mb-3">
+                <a href="#services" class="footer-link">Services</a>
+              </li>
+              <li class="mb-3">
+                <a href="#EliteTeam" class="footer-link">Elite Team</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Services Links -->
+          <div class="col-6 col-lg-3 fade-in">
+            <h5 class="text-white fw-bold mb-4">Our Services</h5>
+            <ul class="list-unstyled">
+              <li class="mb-3">
+                <a href="#services" class="footer-link">Executive Protection</a>
+              </li>
+              <li class="mb-3">
+                <a href="#services" class="footer-link">Event Security</a>
+              </li>
+              <li class="mb-3">
+                <a href="#services" class="footer-link">Secure Transport</a>
+              </li>
+              <li class="mb-3">
+                <a href="#services" class="footer-link">Surveillance Systems</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact & Social -->
+          <div class="col-6 col-lg-3 fade-in">
+            <h5 class="text-white fw-bold mb-4">Get In Touch</h5>
+            <p class="mb-3">
+              <i class="fas fa-phone me-3 text-primary"></i> +31 8232066487
+            </p>
+            <p class="mb-4">
+              <i class="fas fa-envelope me-3 text-primary"></i>
+              info@bouncersecurity.com
+            </p>
+
+            <div class="d-flex gap-2">
+              <a href="#" class="social-icon">
+                <i class="fab fa-facebook-f fs-3"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-twitter fs-3"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-linkedin-in fs-3"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-instagram fs-3"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <hr class="my-5 opacity-25" />
+
+        <div class="row align-items-center text-center">
+          <div class="col-md-4 fade-in text-md-start">
+            <p class="mb-0 opacity-75">
+              © 2025 Bouncer Security. All Rights Reserved.
+            </p>
+          </div>
+
+          <div class="col-md-4 fade-in proud">
+            <span>
+              Proudly designed by
+              <a href="https://designglobal.in/" target="_blank"
+                >Design Global Technology</a
+              >
+            </span>
+          </div>
+
+          <div class="col-md-4 fade-in text-md-end">
+            <p class="mb-0 opacity-75">
+              Designed with <span class="text-primary">●</span> Precision &
+              Protection
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js-folder/about.js"></script>
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

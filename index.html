@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BOUNCER</title>
+    <link
+      rel="icon"
+      href="./assets/img/bodyguard-icon.png"
+      type="image/bodyguard-icon"
+    />
+
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./fontawesome/css/all.min.css" />
+
+    <link rel="stylesheet" href="./css-folder/style.css" />
+  </head>
+  <body>
+    <!-- Enhanced Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html">BOUNCER</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="nav-icon nav-hamburger">
+            <i class="fas fa-bars"></i>
+          </span>
+          <span class="nav-icon nav-close">
+            <i class="fas fa-times"></i>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#EliteTeam">Elite Team</a>
+            </li>
+          </ul>
+
+          <!-- Contact Us Button (separate from regular links) -->
+          <div class="ms-lg-4 mt-3 mt-lg-0">
+            <a href="./contact.html" class="btn contact-nav-btn">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <!-- Floating Particles -->
+      <div id="particles"></div>
+
+      <!-- Hero -->
+      <section id="home" class="hero text-center">
+        <div class="container position-relative" style="z-index: 2">
+          <h1>YOUR SAFETY<br />OUR MISSION</h1>
+          <p class="lead mt-4 mb-5 fs-3">
+            Elite Protection • Unmatched Expertise • 24/7 Security
+          </p>
+          <a href="./contact.html" class="btn btn-primary-glow"
+            >GET PROTECTED NOW</a
+          >
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="section-dark">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6 fade-in">
+              <div class="glow-border">
+                <img
+                  src="./assets/img/guard.avif"
+                  class="img-fluid rounded shadow-lg"
+                  alt="Team"
+                />
+              </div>
+            </div>
+
+            <div class="col-lg-6 fade-in">
+              <h2 class="display-4 fw-bold mb-4">
+                We Are The Best In Protection
+              </h2>
+              <p
+                class="lead text-center text-md-start"
+                style="text-align: justify"
+              >
+                With decades of experience in executive protection, military
+                operations, and law enforcement, Bouncer delivers world-class
+                security solutions globally.
+              </p>
+              <div class="row mt-5">
+                <div class="col-6">
+                  <h3 class="text-primary">500+</h3>
+                  <p>Clients Protected</p>
+                </div>
+                <div class="col-6">
+                  <h3 class="text-primary">99.9%</h3>
+                  <p>Success Rate</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- old Services -->
+      <!-- services -->
+      <!-- <section id="services" class="section-dark">
+        <div class="container">
+          <h2 class="text-center display-4 fw-bold mb-5 fade-in">
+            Our Elite Services
+          </h2>
+          <div class="row g-5">
+            <div class="col-md-4 fade-in p-0">
+              <div class="service-card text-center">
+                <i class="fas fa-user-shield service-icon"></i>
+                <h4>Executive Protection</h4>
+                <p>Personal bodyguards for CEOs, celebrities & dignitaries</p>
+              </div>
+            </div>
+
+            <div class="col-md-4 fade-in p-0">
+              <div class="service-card text-center">
+                <i class="fas fa-video service-icon"></i>
+                <h4>Advanced Surveillance</h4>
+                <p>Cutting-edge CCTV & real-time monitoring</p>
+              </div>
+            </div>
+
+            <div class="col-md-4 fade-in p-0">
+              <div class="service-card text-center">
+                <i class="fas fa-shield-alt service-icon"></i>
+                <h4>Event Security</h4>
+                <p>Full protection for events of any scale</p>
+              </div>
+            </div>
+
+            <div class="col-md-4 fade-in p-0">
+              <div class="service-card text-center">
+                <i class="fas fa-car service-icon"></i>
+                <h4>Secure Transport</h4>
+                <p>Armored vehicles and secure escorts</p>
+              </div>
+            </div>
+
+            <div class="col-md-4 fade-in p-0">
+              <div class="service-card text-center">
+                <i class="fas fa-home service-icon"></i>
+                <h4>Residential Security</h4>
+                <p>Complete home protection systems</p>
+              </div>
+            </div>
+
+            <div class="col-md-4 fade-in p-0">
+              <div class="service-card text-center">
+                <i class="fas fa-building service-icon"></i>
+                <h4>Corporate Security</h4>
+                <p>Office and facility safeguarding</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- New Services -->
+      <section id="services" class="section-dark">
+        <div class="container-fluid px-0">
+          <h2 class="text-center display-4 fw-bold mb-5 fade-in">
+            Our Elite Services
+          </h2>
+
+          <div class="row g-0">
+            <div class="col-md-4 fade-in p-3 p-md-4">
+              <div class="service-card text-center">
+                <i class="fas fa-user-shield service-icon"></i>
+                <h4>Executive Protection</h4>
+                <p>Personal bodyguards for CEOs, celebrities & dignitaries</p>
+              </div>
+            </div>
+            <div class="col-md-4 fade-in p-3 p-md-4">
+              <div class="service-card text-center">
+                <i class="fas fa-video service-icon"></i>
+                <h4>Advanced Surveillance</h4>
+                <p>Cutting-edge CCTV & real-time monitoring</p>
+              </div>
+            </div>
+            <div class="col-md-4 fade-in p-3 p-md-4">
+              <div class="service-card text-center">
+                <i class="fas fa-shield-alt service-icon"></i>
+                <h4>Event Security</h4>
+                <p>Full protection for events of any scale</p>
+              </div>
+            </div>
+          </div>
+          <div class="row g-0">
+            <div class="col-md-4 fade-in p-3 p-md-4">
+              <div class="service-card text-center">
+                <i class="fas fa-car service-icon"></i>
+                <h4>Secure Transport</h4>
+                <p>Armored vehicles and secure escorts</p>
+              </div>
+            </div>
+            <div class="col-md-4 fade-in p-3 p-md-4">
+              <div class="service-card text-center">
+                <i class="fas fa-home service-icon"></i>
+                <h4>Residential Security</h4>
+                <p>Complete home protection systems</p>
+              </div>
+            </div>
+            <div class="col-md-4 fade-in p-3 p-md-4">
+              <div class="service-card text-center">
+                <i class="fas fa-building service-icon"></i>
+                <h4>Corporate Security</h4>
+                <p>Office and facility safeguarding</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Stats -->
+      <section
+        id="stats"
+        class="py-5"
+        style="background: linear-gradient(135deg, #111, #000)"
+      >
+        <div class="container">
+          <div class="row text-center">
+            <div class="col-md-3 mb-5 fade-in">
+              <h3 class="counter" data-target="1500">0</h3>
+              <p>Successful Missions</p>
+            </div>
+            <div class="col-md-3 mb-5 fade-in">
+              <h3 class="counter" data-target="250">0</h3>
+              <p>Elite Agents</p>
+            </div>
+            <div class="col-md-3 mb-5 fade-in">
+              <h3 class="counter" data-target="45">0</h3>
+              <p>Countries Served</p>
+            </div>
+            <div class="col-md-3 mb-5 fade-in">
+              <h3 class="counter" data-target="100">0</h3>
+              <p>Client Satisfaction %</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- old-code -->
+      <!-- Our Team Section -->
+      <!-- <section id="EliteTeam" class="section-dark">
+        <div class="container">
+          <h2 class="text-center display-4 fw-bold mb-5 fade-in">
+            Meet Our Elite Team
+          </h2>
+          <p
+            class="text-center lead mb-5 fade-in"
+            style="max-width: 800px; margin: 0 auto"
+          >
+            Highly trained professionals with backgrounds in military, law
+            enforcement, and executive protection.
+          </p>
+          <div class="row g-5">
+            <div class="col-md-4 fade-in">
+              <div class="team-card">
+                <img
+                  src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                  alt="Team Member"
+                  class="team-img"
+                />
+                <div class="p-4">
+                  <h4 class="team-name">Marcus Steele</h4>
+                  <p class="team-role">Chief Security Officer</p>
+                  <p>20+ years in special forces and VIP protection</p>
+                  <div class="team-social">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 fade-in">
+              <div class="team-card">
+                <img
+                  src="https://images.unsplash.com/photo-1618371690240-e0d46eead4b8?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Team Member"
+                  class="team-img"
+                />
+                <div class="p-4">
+                  <h4 class="team-name">Alexa Vanguard</h4>
+                  <p class="team-role">Lead Tactical Operator</p>
+                  <p>Former SWAT commander & close protection expert</p>
+                  <div class="team-social">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 fade-in">
+              <div class="team-card">
+                <img
+                  src="https://images.unsplash.com/photo-1547355332-c590834bbbb4?q=80&w=327&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Team Member"
+                  class="team-img"
+                />
+                <div class="p-4">
+                  <h4 class="team-name">Victor Kane</h4>
+                  <p class="team-role">Surveillance Specialist</p>
+                  <p>Expert in advanced monitoring & threat assessment</p>
+                  <div class="team-social">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 fade-in">
+              <div class="team-card">
+                <img
+                  src="https://c7.alamy.com/comp/AYFBMT/african-male-bouncer-velvet-rope-AYFBMT.jpg"
+                  alt="Team Member"
+                  class="team-img"
+                />
+                <div class="p-4">
+                  <h4 class="team-name">Marcus Steele</h4>
+                  <p class="team-role">Chief Security Officer</p>
+                  <p>20+ years in special forces and VIP protection</p>
+                  <div class="team-social">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 fade-in">
+              <div class="team-card">
+                <img
+                  src="https://images.unsplash.com/photo-1547355332-c590834bbbb4?q=80&w=327&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Team Member"
+                  class="team-img"
+                />
+                <div class="p-4">
+                  <h4 class="team-name">Alexa Vanguard</h4>
+                  <p class="team-role">Lead Tactical Operator</p>
+                  <p>Former SWAT commander & close protection expert</p>
+                  <div class="team-social">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 fade-in">
+              <div class="team-card">
+                <img
+                  src="https://images.unsplash.com/photo-1547355332-c590834bbbb4?q=80&w=327&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Team Member"
+                  class="team-img"
+                />
+                <div class="p-4">
+                  <h4 class="team-name">Victor Kane</h4>
+                  <p class="team-role">Surveillance Specialist</p>
+                  <p>Expert in advanced monitoring & threat assessment</p>
+                  <div class="team-social">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- New-code -->
+      <section id="EliteTeam" class="section-dark">
+        <div class="container-fluid px-0">
+          <h2 class="text-center display-4 fw-bold fade-in">
+            Meet Our Elite Team
+          </h2>
+
+          <p class="text-center lead fade-in team-intro">
+            Highly trained professionals with backgrounds in military, law
+            enforcement, and executive protection.
+          </p>
+
+          <div class="row g-0 mx-0">
+            <!-- CARD 1 -->
+            <div class="col-md-4 fade-in d-flex justify-content-center">
+              <div class="team-card">
+                <img
+                  src="./assets/img/bouncer-security.png"
+                  alt="Bouncer Body Guards"
+                  class="team-img"
+                />
+                <div class="p-4">
+                  <h4 class="team-name">Marcus Steele</h4>
+                  <p class="team-role">Chief Security Officer</p>
+                  <p>20+ years in special forces and VIP protection</p>
+                  <div class="team-social">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="col-md-4 fade-in d-flex justify-content-center">
+              <div class="team-card">
+                <img
+                  src="./assets/img/bouncer-security.png"
+                  alt="Bouncer Body Guards"
+                  class="team-img"
+                />
+                <div class="p-4">
+                  <h4 class="team-name">Marcus Steele</h4>
+                  <p class="team-role">Chief Security Officer</p>
+                  <p>20+ years in special forces and VIP protection</p>
+                  <div class="team-social">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="col-md-4 fade-in d-flex justify-content-center">
+              <div class="team-card">
+                <img
+                  src="./assets/img/bouncer-security.png"
+                  alt="Bouncer Body Guards"
+                  class="team-img"
+                />
+                <div class="p-4">
+                  <h4 class="team-name">Marcus Steele</h4>
+                  <p class="team-role">Chief Security Officer</p>
+                  <p>20+ years in special forces and VIP protection</p>
+                  <div class="team-social">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Repeat cards as needed (same structure) -->
+          </div>
+          <div class="row g-0 mx-0 pt-0 pt-md-5">
+            <!-- CARD 1 -->
+            <div class="col-md-4 fade-in d-flex justify-content-center">
+              <div class="team-card">
+                <img
+                  src="./assets/img/bouncer-security.png"
+                  alt="Team Member"
+                  class="team-img"
+                />
+                <div class="p-4">
+                  <h4 class="team-name">Marcus Steele</h4>
+                  <p class="team-role">Chief Security Officer</p>
+                  <p>20+ years in special forces and VIP protection</p>
+                  <div class="team-social">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="col-md-4 fade-in d-flex justify-content-center">
+              <div class="team-card">
+                <img
+                  src="./assets/img/bouncer-security.png"
+                  alt="Team Member"
+                  class="team-img"
+                />
+                <div class="p-4">
+                  <h4 class="team-name">Alexa Vanguard</h4>
+                  <p class="team-role">Lead Tactical Operator</p>
+                  <p>Former SWAT commander & close protection expert</p>
+                  <div class="team-social">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="col-md-4 fade-in d-flex justify-content-center">
+              <div class="team-card">
+                <img
+                  src="./assets/img/bouncer-security.png"
+                  alt="Team Member"
+                  class="team-img"
+                />
+                <div class="p-4">
+                  <h4 class="team-name">Victor Kane</h4>
+                  <p class="team-role">Surveillance Specialist</p>
+                  <p>Expert in advanced monitoring & threat assessment</p>
+                  <div class="team-social">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Repeat cards as needed (same structure) -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials Section -->
+      <section id="testimonials" class="section-dark py-5">
+        <div class="container">
+          <h2 class="text-center display-4 fw-bold mb-5 fade-in">
+            What Our Clients Say
+          </h2>
+          <p
+            class="text-center lead mb-5 fade-in"
+            style="max-width: 800px; margin: 0 auto"
+          >
+            Trusted by high-profile individuals, corporations, and events
+            worldwide.
+          </p>
+
+          <!-- Bootstrap Carousel for Testimonials -->
+          <div
+            id="testimonialCarousel"
+            class="carousel slide fade-in"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner text-center">
+              <div class="carousel-item active">
+                <div class="row justify-content-center">
+                  <div class="col-lg-8">
+                    <div
+                      class="p-5"
+                      style="
+                        background: rgba(255, 255, 255, 0.03);
+                        border-radius: 20px;
+                        border: 1px solid rgba(231, 76, 60, 0.2);
+                      "
+                    >
+                      <p class="fs-4 fst-italic mb-4">
+                        "Bouncer's team provided flawless executive protection
+                        during my international tour. Professional, discreet,
+                        and always one step ahead."
+                      </p>
+                      <h5 class="text-primary">— Alexander Voss</h5>
+                      <p>CEO, Voss Global Industries</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="row justify-content-center">
+                  <div class="col-lg-8">
+                    <div
+                      class="p-5"
+                      style="
+                        background: rgba(255, 255, 255, 0.03);
+                        border-radius: 20px;
+                        border: 1px solid rgba(231, 76, 60, 0.2);
+                      "
+                    >
+                      <p class="fs-4 fst-italic mb-4">
+                        "Their event security team handled our gala with 500+
+                        VIP guests perfectly. Zero incidents and complete peace
+                        of mind."
+                      </p>
+                      <h5 class="text-primary">— Sophia Laurent</h5>
+                      <p>Event Director, Laurent Foundation</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="row justify-content-center">
+                  <div class="col-lg-8">
+                    <div
+                      class="p-5"
+                      style="
+                        background: rgba(255, 255, 255, 0.03);
+                        border-radius: 20px;
+                        border: 1px solid rgba(231, 76, 60, 0.2);
+                      "
+                    >
+                      <p class="fs-4 fst-italic mb-4">
+                        "The residential security system and on-call response
+                        team gave my family the safety we needed in uncertain
+                        times."
+                      </p>
+                      <h5 class="text-primary">— Dr. Michael Reyes</h5>
+                      <p>Philanthropist & Surgeon</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Carousel Controls -->
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#testimonialCarousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#testimonialCarousel"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+
+            <!-- Indicators -->
+            <div class="carousel-indicators mt-4">
+              <button
+                type="button"
+                data-bs-target="#testimonialCarousel"
+                data-bs-slide-to="0"
+                class="active bg-white"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#testimonialCarousel"
+                data-bs-slide-to="1"
+                class="bg-white"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#testimonialCarousel"
+                data-bs-slide-to="2"
+                class="bg-white"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="py-5 text-center" style="background: var(--primary)">
+        <div class="container fade-in">
+          <h2 class="display-4 fw-bold">Don't Risk Your Safety</h2>
+          <p class="lead my-4 fs-3">Get professional protection today</p>
+          <a href="./contact.html" class="btn btn-dark btn-lg px-5 py-4">
+            REQUEST PROTECTION
+          </a>
+        </div>
+      </section>
+    </main>
+    <!-- Floating WhatsApp Button -->
+    <a
+      href="https://wa.me/919999999999?text=Hello%20I%20would%20like%20to%20book%20an%20Ayurveda%20consultation"
+      class="whatsapp-float"
+      target="_blank"
+      aria-label="Chat on WhatsApp"
+    >
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <!-- Footer -->
+    <footer
+      class="py-5"
+      style="
+        background: linear-gradient(135deg, #000, #1a0000);
+        border-top: 3px solid var(--primary);
+        position: relative;
+        overflow: hidden;
+      "
+    >
+      <!-- Subtle glow overlay -->
+      <div
+        style="
+          position: absolute;
+          inset: 0;
+          background: radial-gradient(
+            circle at top center,
+            rgba(231, 76, 60, 0.15),
+            transparent 70%
+          );
+          pointer-events: none;
+        "
+      ></div>
+
+      <div class="container position-relative" style="z-index: 2">
+        <div class="row gy-5">
+          <!-- Brand & Description -->
+          <div class="col-6 col-lg-3 fade-in">
+            <a
+              class="navbar-brand"
+              href="./index.html"
+              style="line-height: initial"
+              >BOUNCER</a
+            >
+            <p class="lead opacity-75">
+              Elite Security & Executive Protection Agency
+            </p>
+            <p class="opacity-75">
+              Providing world-class protection with unmatched expertise,
+              discretion, and 24/7 readiness.
+            </p>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-6 col-lg-3 fade-in">
+            <h5 class="text-white fw-bold mb-4" style="line-height: inherit">
+              Quick Links
+            </h5>
+            <ul class="list-unstyled">
+              <li class="mb-3">
+                <a href="./index.html" class="footer-link">Home</a>
+              </li>
+              <li class="mb-3">
+                <a href="./about.html" class="footer-link">About Us</a>
+              </li>
+              <li class="mb-3">
+                <a href="#services" class="footer-link">Services</a>
+              </li>
+              <li class="mb-3">
+                <a href="#EliteTeam" class="footer-link">Elite Team</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Services Links -->
+          <div class="col-6 col-lg-3 fade-in">
+            <h5 class="text-white fw-bold mb-4">Our Services</h5>
+            <ul class="list-unstyled">
+              <li class="mb-3">
+                <a href="#services" class="footer-link">Executive Protection</a>
+              </li>
+              <li class="mb-3">
+                <a href="#services" class="footer-link">Event Security</a>
+              </li>
+              <li class="mb-3">
+                <a href="#services" class="footer-link">Secure Transport</a>
+              </li>
+              <li class="mb-3">
+                <a href="#services" class="footer-link">Surveillance Systems</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact & Social -->
+          <div class="col-6 col-lg-3 fade-in">
+            <h5 class="text-white fw-bold mb-4">Get In Touch</h5>
+            <p class="mb-3">
+              <i class="fas fa-phone me-3 text-primary"></i> +31 8232066487
+            </p>
+            <p class="mb-4">
+              <i class="fas fa-envelope me-3 text-primary"></i>
+              info@bouncersecurity.com
+            </p>
+
+            <div class="d-flex gap-2">
+              <a href="#" class="social-icon">
+                <i class="fab fa-facebook-f fs-3"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-twitter fs-3"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-linkedin-in fs-3"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-instagram fs-3"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <hr class="my-5 opacity-25" />
+
+        <div class="row align-items-center text-center">
+          <div class="col-md-4 fade-in text-md-start">
+            <p class="mb-0 opacity-75">
+              © 2025 Bouncer Security. All Rights Reserved.
+            </p>
+          </div>
+
+          <div class="col-md-4 fade-in proud">
+            <span>
+              Proudly designed by
+              <a href="https://designglobal.in/" target="_blank"
+                >Design Global Technology</a
+              >
+            </span>
+          </div>
+
+          <div class="col-md-4 fade-in text-md-end">
+            <p class="mb-0 opacity-75">
+              Designed with <span class="text-primary">●</span> Precision &
+              Protection
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js-folder/app.js"></script>
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
